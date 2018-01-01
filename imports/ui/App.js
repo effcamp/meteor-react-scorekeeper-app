@@ -7,7 +7,7 @@ import PlayerList from './PlayerList';
 import { Players } from '../api/players';
 
 const App = () => {
-  const players = Players.find().fetch();
+  const players = Players.find({}, { sort: { score: -1 } }).fetch();
   const title = 'Score Keep';
   const subtitle = 'Created by Fred';
   return (
