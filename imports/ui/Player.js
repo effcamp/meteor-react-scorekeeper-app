@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Players } from '../api/players';
 
-export default (props) => {
+const Player = (props) => {
   return (
     <div>
       <p>
@@ -31,3 +32,9 @@ export default (props) => {
     </div>
   );
 };
+
+Player.propTypes = {
+  player: PropTypes.object.isRequired
+};
+
+export default Player;
