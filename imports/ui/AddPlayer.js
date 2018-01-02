@@ -17,16 +17,11 @@ export default class AddPlayer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="item">
         <form onSubmit={this.handleSubmit}>
-          <input
-            type="text"
-            name="playerName"
-            placeholder="Player name"
-            autoComplete="off"
-            autoFocus
-          />
-          <button>Add Player</button>
+          {/* prettier-ignore */}
+          <input type="text" name="playerName" placeholder="Player name" autoComplete="off" autoFocus/>
+          <button className="button">Add Player</button>
         </form>
       </div>
     );

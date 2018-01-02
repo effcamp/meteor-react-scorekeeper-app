@@ -12,7 +12,7 @@ const App = () => {
   const subtitle = 'Created by Fred';
   return (
     <div>
-      <TitleBar title={title} />
+      <TitleBar title={title} subtitle={subtitle} />
       <div className="wrapper">
         <PlayerList players={players} />
         <AddPlayer />

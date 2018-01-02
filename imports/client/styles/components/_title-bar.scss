@@ -1,4 +1,9 @@
 .title-bar {
   background-color: $color-titlebar;
   color: $color-title-font;
+
+  &__subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
 }

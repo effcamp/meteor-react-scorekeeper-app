@@ -10,8 +10,12 @@ const PlayerList = (props) => {
     ));
   };
   return (
-    <div>
-      {props.players.length === 0 ? <p>Add a new player!</p> : renderPlayers()}
+    <div className="item">
+      {props.players.length === 0 ? (
+        <p className="item__message">Add a new player!</p>
+      ) : (
+        renderPlayers()
+      )}
     </div>
   );
 };

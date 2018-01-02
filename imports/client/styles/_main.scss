@@ -3,6 +3,7 @@
 $color-primary: #555555;
 $color-titlebar: #e35557;
 $color-title-font: white;
+$color-background: #f2f2f2;
 
 * {
   margin: 0;
@@ -13,6 +14,8 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
+  background-color: $color-background;
   color: $color-primary;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -23,3 +26,5 @@ h1 {
 
 @import './components/title-bar';
 @import './components/wrapper';
+@import './components/item';
+@import './components/button';
