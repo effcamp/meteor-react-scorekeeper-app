@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FlipMove from 'react-flip-move';
 
 import Player from './Player';
 
@@ -11,11 +12,13 @@ const PlayerList = (props) => {
   };
   return (
     <div className="item">
-      {props.players.length === 0 ? (
-        <p className="item__message">Add a new player!</p>
-      ) : (
-        renderPlayers()
-      )}
+      <FlipMove maintainContainerHeight={true}>
+        {props.players.length === 0 ? (
+          <p className="item__message">Add a new player!</p>
+        ) : (
+          renderPlayers()
+        )}
+      </FlipMove>
     </div>
   );
 };

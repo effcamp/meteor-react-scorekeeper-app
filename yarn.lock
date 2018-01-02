@@ -380,6 +380,10 @@ node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
+numeral@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/numeral/-/numeral-2.0.6.tgz#4ad080936d443c2561aed9f2197efffe25f4e506"
+
 object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -485,6 +489,10 @@ react-dom@^16.2.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
+
+react-flip-move@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/react-flip-move/-/react-flip-move-2.10.0.tgz#70978ed2ca4a6b94d01fe7a230970460f9127b67"
 
 react@^16.2.0:
   version "16.2.0"

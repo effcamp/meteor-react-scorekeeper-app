@@ -10,7 +10,7 @@ export default class AddPlayer extends Component {
       e.target.playerName.value = '';
       Players.insert({
         name,
-        score: this.props.score
+        score: 0
       });
     }
   };
@@ -18,9 +18,9 @@ export default class AddPlayer extends Component {
   render() {
     return (
       <div className="item">
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="form">
           {/* prettier-ignore */}
-          <input type="text" name="playerName" placeholder="Player name" autoComplete="off" autoFocus/>
+          <input type="text" name="playerName" placeholder="Player name" autoComplete="off" autoFocus className="form__input"/>
           <button className="button">Add Player</button>
         </form>
       </div>

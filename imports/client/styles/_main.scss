@@ -5,6 +5,13 @@ $color-titlebar: #e35557;
 $color-title-font: white;
 $color-background: #f2f2f2;
 
+$first-place-color: #e4ede0;
+$first-place-color-alt: darken($first-place-color, 15%);
+$second-place-color: #dfe7ed;
+$second-place-color-alt: darken($second-place-color, 15%);
+$third-place-color: #eddfef;
+$third-place-color-alt: darken($third-place-color, 15%);
+
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +22,14 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
   background-color: $color-background;
   color: $color-primary;
-  font-family: Helvetica, Arial, sans-serif;
+}
+input,
+button,
+select {
+  font-size: 1.3rem;
 }
 h1 {
   font-weight: 300;
@@ -28,3 +40,5 @@ h1 {
 @import './components/wrapper';
 @import './components/item';
 @import './components/button';
+@import './components/form';
+@import './components/player';

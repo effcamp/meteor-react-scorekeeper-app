@@ -10,4 +10,16 @@
     font-weight: 300;
     text-align: center;
   }
+  &--position-1 {
+    background-color: $first-place-color;
+    border-color: $first-place-color-alt;
+  }
+  &--position-2 {
+    background-color: $second-place-color;
+    border-color: $second-place-color-alt;
+  }
+  &--position-3 {
+    background-color: $third-place-color;
+    border-color: $third-place-color-alt;
+  }
 }
