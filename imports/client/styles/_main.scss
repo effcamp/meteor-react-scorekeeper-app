@@ -1,0 +1,25 @@
+/* CSS declarations go here */
+
+$color-primary: #555555;
+$color-titlebar: #e35557;
+$color-title-font: white;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $color-primary;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+@import './components/title-bar';
+@import './components/wrapper';

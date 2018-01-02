@@ -13,8 +13,10 @@ const App = () => {
   return (
     <div>
       <TitleBar title={title} />
-      <PlayerList players={players} />
-      <AddPlayer />
+      <div className="wrapper">
+        <PlayerList players={players} />
+        <AddPlayer />
+      </div>
     </div>
   );
 };
